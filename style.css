@@ -1,0 +1,799 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: auto;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+    z-index: 999;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 4px 7px;
+     width: 25px;
+     height: 30px;
+    background-color: #4213A1;
+    color: white;
+    text-decoration: none;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    border: 3px solid #4213A1;
+    
+}
+.scroll-to-top img{
+    width: 70%;
+    margin-top: 2px;
+
+}
+
+
+
+/* HEADER */
+
+
+header {
+    z-index: 999;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 0 2px 20px rgba(170, 170, 170, 0.5);
+}
+
+h1 {
+    margin: 0;
+    font-family: "Tomorrow", sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+h2{
+    font-family: "Khand", sans-serif;
+    color: #4213A1;
+    margin: 0;
+    font-size: 18px;
+}
+
+.contact-btn {
+    position: fixed;
+    z-index: 1000;
+    right: 50px;
+    top: 25px;
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: #4213A1;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    border: 3px solid #4213A1;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+.contact-btn:hover{
+    background-color: #ffffff;
+    color: #4213A1;
+    border: 3px solid #4213A1;
+}
+
+.contact-btn-tel {
+    z-index: 999;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    padding: 4px 7px;
+     width: 25px;
+     height: 30px;
+    background-color: #4213A1;
+    color: white;
+    text-decoration: none;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    border: 3px solid #4213A1;
+}
+
+.contact-btn-tel img{
+    width: 70%;
+    margin-top: 5px;
+
+}
+
+@media (min-width: 1024px) {
+    .contact-btn {
+        display: block; 
+    }
+    .contact-btn-tel{
+        display: none;
+    }
+}
+
+
+/*
+
+SECTION 1
+
+*/
+
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+h3{
+    text-align: left;
+    color: #4213A1;
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.welcometext {
+    width: auto;
+    text-align: left;
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    padding : 30px 40px 30px 40px
+}
+
+.welcometext h3{
+    font-family: "Tomorrow", sans-serif;
+}
+
+.welcometext p {
+    margin: 0;   
+}
+
+.purpletext{
+    color: #4213A1 ;
+    font-weight: 800;
+}
+
+.sportgirl img{
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+}
+
+ @media (min-width: 915px) {
+    .welcome{
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        gap: 20px;
+    }
+
+    .sportgirl img{
+        width: 90vh;
+    }
+
+    .welcometext{
+        font-size: 17px;
+        padding-left: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sportgirl img{
+        width: 80vh;
+    }
+    h3{
+        font-size: 23px;
+    }
+    .welcometext{
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*
+
+SECTION
+
+*/
+
+.chiffre-cles{
+    display: grid; /* Utilise le modèle de grille */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr)); /* Crée des colonnes flexibles */
+    gap: 30px; /* Espace entre les cartes */
+    padding: 70px 20px; /* Espace intérieur autour de la grille */
+}
+
+h4{
+    font-family: "Tomorrow", sans-serif;
+    color: #4213A1;
+    font-size: 20px;
+    margin: 10px 0 0px 0;
+}
+
+.chiffre-cles p {
+    font-family: "Khand", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-chiffre-cle img{
+    width: 40%;
+}
+
+@media (min-width: 1024px) {
+    .card-chiffre-cle img{
+        width: 20%;
+    }
+    .chiffre-cles{
+        padding: 100px 100px;
+        gap: 0px;
+    }
+}
+
+
+
+/*
+
+SECTION 
+
+*/
+
+
+.horaires{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+
+
+.horaires img{
+    width: 100%; 
+     height: 100%; 
+      display: block;   
+    }
+
+h5{
+    font-family: "Tomorrow", sans-serif;
+    font-size: 26px;
+    color: black;
+    margin-top: 0;
+}
+
+.horaires-text{
+    align-self: center;
+    margin: 0px 30px 70px 30px   
+}
+
+h6{
+    font-family: "Khand", sans-serif;
+    font-weight: 900;
+    color: #4213A1;
+    text-align: left;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.horaires-text p{
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: black;
+    font-size: 17px;
+    margin: 0;
+}
+
+.purple{
+    font-family: "Khand", sans-serif;
+    color: #4213A1;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.horaires-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 30px; 
+}
+
+@media (min-width: 1024px) {
+
+    .horaires{
+        flex-direction: row;
+        gap: 50px;
+        padding: 50px 0;
+    }
+
+    .horaires img {
+        width: 45%;
+    }
+    .horaires-text{
+        align-self: center;
+        width: 700px;
+        margin: 0;
+        padding-left:70px;
+    }
+    .horaires-grid {
+        gap: 70px; 
+    }
+    
+}
+
+
+
+/*
+
+SECTION
+
+*/
+
+
+.tarifs{
+    margin: auto 30px; /* Centre horizontalement */
+    padding: 70px 0px;/* Optionnel, limite la largeur du bloc */
+}
+.titre-tarifs h5{
+    text-align: center;
+    margin: 0;
+}
+
+.tarifs p{
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.titres-tarifs {
+    text-align: center; /* Centre le titre */
+}
+
+.tarifs-text {
+    
+    display: grid; /* Utilise la grille pour la mise en page */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr); /* Crée deux colonnes de largeur égale */
+    gap: 0px; /* Espace entre les colonnes */
+    font-size: 17px;
+}
+
+
+
+@media (min-width: 1024px) {
+    
+    .tarifs{
+        margin: auto 70px;
+        padding: 50px 0
+    }
+    .tarifs-text {
+        padding-top: 50px;
+        grid-template-columns: repeat(3, 1fr); /* Passe à trois colonnes */
+        gap: 50px; /* Espacement entre les colonnes */
+        justify-content: center; /* Centre les colonnes dans le conteneur */
+        align-items: flex-start; /* Aligne en haut */
+    }
+}
+@media (min-width: 1200px) {
+    .tarifs-text {
+        gap: 150px;
+    }
+}
+
+/*
+
+SECTION
+
+*/
+
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+
+.informations-text{
+    margin: 0px 30px 70px 30px
+}
+
+
+.informations img{
+    width: 100%; /* Limite la largeur à 80% de son conteneur */
+     height: 100%; /* Conserve le rapport d'aspect */
+      display: block;
+}
+
+.informations-text p{
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    
+}
+
+.informations-text h5{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (min-width: 1024px) {
+
+    .informations-text p{
+        padding: 50px 0 0 0;
+        margin: 0;
+    }
+
+    .informations-text h5{
+        margin: 0
+    }
+    .informations{
+        flex-direction: row;
+        padding: 50px 0;
+    }
+    .informations-text{
+        padding: 0px 70px;
+        margin: 0;
+    }
+}
+
+
+/*
+
+SECTION
+
+*/
+
+.citation{
+    margin: 0 30px 70px 30px;
+}
+
+
+.citation h5 {
+    color: #4213A1;
+    font-family: "Khand", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.citation p{
+    color: black;
+    font-family: "Khand", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+    .citation{
+        margin: 50px 70px 100px 70px;
+    }
+    .citation h5{
+        font-size: 25px;
+    }
+    .citation p{
+        font-size: 20px;
+    }
+}
+
+
+
+/*
+
+FOOTER
+
+*/
+
+.footer{
+    background-color: #f0f0f0;
+    color: white;
+    padding: 10px 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contact{
+    width:auto;
+    padding: 30px 30px 0 30px;
+}
+
+.contact p{
+    font-size: 18px;
+}
+.contact h5{
+    font-size: 23px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+}
+
+.mail p {
+    margin: 0;
+}
+
+.mail a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mail a:hover{
+    color: #4213A1;
+}
+
+.mail img{
+    
+    height: 20px;
+}
+
+.roles p{
+    color: black;
+    text-align: left;
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+    margin:  0;
+}
+
+.roles{
+    margin-top: 20px;
+}
+
+.tel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+}
+
+.tel a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.tel a:hover{
+    color: #4213A1;
+}
+
+.tel img{
+    height: 15px;
+}
+
+
+.lieux{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+}
+
+.lieux-text{
+    width:auto;
+    padding: 0 30px 30px 30px;
+}
+
+.lieux h5{
+    font-size: 23px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.lieux p{ 
+    text-align: left;
+    color: black;
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+.map{
+    background-color: #f0f0f0;
+}
+.map iframe {
+    width: 100%; /* L'iframe prendra toute la largeur du conteneur .map */
+    height: 200px/* L'iframe prendra toute la hauteur du conteneur .map */
+}
+
+.mentions{
+    background-color: #f0f0f0;
+    color: black;
+    font-family: "Khand", sans-serif;
+    padding: 20px 0;
+}
+
+.mentions span{
+    margin: 0;
+}
+
+.mentions p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.clickable {
+    color: rgb(0, 0, 0); /* Change la couleur du texte */
+    cursor: pointer; /* Change le curseur en pointeur */
+}
+
+.clickable:hover{
+    color: #4213A1;
+}
+
+@media (min-width: 700px) {
+    .footer{
+        flex-direction: row;
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .contact{
+        padding: 30px 30px 30px 50px;
+    }
+    .lieux{
+        padding: 30px 50px 30px 30px;
+    }
+    .lieux-text{
+        padding: 0;
+    }
+    
+    
+}
+
+@media (min-width: 1024px) {
+    .map iframe {
+        width: 50%; /* L'iframe prendra toute la largeur du conteneur .map */
+        height: 200px/* L'iframe prendra toute la hauteur du conteneur .map */
+    }
+}
+
+
+
+/*JAVASCRIPT*/
+
+.card-chiffre-cle {
+    opacity: 0; /* Initialement invisible */
+    transform: translateY(-20px); /* Déplacement vers le haut */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    /* Le délai est appliqué dynamiquement depuis le JavaScript */
+}
+
+.card-chiffre-cle.visible {
+    opacity: 1; /* Rend visible */
+    transform: translateY(0); /* Ramène à la position d'origine */
+}
+
+
+
+
+
+
+.horaires {
+    overflow: hidden; /* Évite tout débordement */
+}
+
+.horaires-text {
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.6s ease-out; /* Animation d'opacité seulement */
+}
+
+.horaires img {
+    opacity: 0; /* Initialement invisible */
+    transform: translateX(50px); /* Image décalée vers la droite */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation fluide */
+}
+
+.horaires.visible .horaires-text {
+    opacity: 1; /* Texte devient visible */
+}
+
+.horaires.visible img {
+    opacity: 1; /* Image devient visible */
+    transform: translateX(0); /* Image revient à sa position normale */
+}
+
+
+
+
+
+.tarifs-text > div {
+    opacity: 0; /* Initialement invisible */
+    transform: translateY(20px); /* Léger décalage vers le bas */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation fluide */
+}
+
+.tarifs-text > div.visible {
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Position d'origine */
+}
+
+
+
+
+
+
+.informations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden; /* Empêche le débordement */
+}
+
+.informations .element {
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.6s ease-out; /* Animation d'opacité pour tout */
+}
+
+.informations .informations-text {
+    opacity: 0; /* Texte initialement invisible */
+    transition: opacity 0.6s ease-out; /* Effet d'opacité pour le texte */
+}
+
+.informations img {
+    opacity: 0; /* Image initialement invisible */
+    transform: translateX(-50px); /* Déplace l'image vers la gauche */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation fluide */
+}
+
+.informations.visible .informations-text {
+    opacity: 1; /* Texte devient visible */
+}
+
+.informations.visible img {
+    opacity: 1; /* L'image devient visible */
+    transform: translateX(0); /* L'image revient à sa position normale */
+}
+
+.informations.visible .element {
+    opacity: 1; /* Les éléments deviennent visibles */
+}
+
+
+
+
+.citation {
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.6s ease-out; /* Animation d'opacité */
+}
+
+.citation.visible {
+    opacity: 1; /* La citation devient visible une fois la classe 'visible' ajoutée */
+}
