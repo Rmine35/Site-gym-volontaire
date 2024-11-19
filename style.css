@@ -57,8 +57,7 @@ h1 {
     color: black;
     font-size: 20px;
 }
-
-h2{
+.SJ h1{
     font-family: "Khand", sans-serif;
     color: #4213A1;
     margin: 0;
@@ -113,6 +112,8 @@ h2{
 
 }
 
+
+
 @media (min-width: 1024px) {
     .contact-btn {
         display: block; 
@@ -139,10 +140,10 @@ SECTION 1
     padding-top: 100px;
 }
 
-h3{
+h2{
     text-align: left;
     color: #4213A1;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 30px;
     margin: 0;
 }
@@ -173,15 +174,31 @@ h3{
 .sportgirl img{
     display: block;
     width: 100%;
-    padding-top: 50px;
 }
+
+.btn-ad{
+    margin-top: 50px;
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: #4213A1;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    border: 3px solid #4213A1;
+    transition: background-color 0.3s ease;
+}
+
+
 
  @media (min-width: 915px) {
     .welcome{
         flex-direction: row;
         align-items: center;
         width: auto;
-        gap: 20px;
+        gap:100px;
     }
 
     .sportgirl img{
@@ -195,11 +212,22 @@ h3{
 }
 
 @media (min-width: 1024px) {
+    .welcome{
+        padding-top: 150px;
+    }
+    .btn-ad{
+        margin-top: 35px;
+    }
+    .btn-ad:hover{
+        background-color: #f0f0f0;
+        color: #4213A1;
+        border: 3px solid #4213A1;
+    }
     .sportgirl img{
         width: 80vh;
     }
-    h3{
-        font-size: 23px;
+    h2{
+        font-size: 27px;
     }
     .welcometext{
         font-size: 18px;
@@ -222,7 +250,7 @@ SECTION
     padding: 70px 20px; /* Espace intérieur autour de la grille */
 }
 
-h4{
+.chiffres p{
     font-family: "Tomorrow", sans-serif;
     color: #4213A1;
     font-size: 20px;
@@ -243,6 +271,10 @@ h4{
 @media (min-width: 1024px) {
     .card-chiffre-cle img{
         width: 20%;
+    }
+    .chiffres p{
+        margin-top: 18px;
+        font-size: 25px;
     }
     .chiffre-cles{
         padding: 100px 100px;
@@ -274,7 +306,7 @@ SECTION
       display: block;   
     }
 
-h5{
+h3{
     font-family: "Tomorrow", sans-serif;
     font-size: 26px;
     color: black;
@@ -286,7 +318,7 @@ h5{
     margin: 0px 30px 70px 30px   
 }
 
-h6{
+h4{
     font-family: "Khand", sans-serif;
     font-weight: 900;
     color: #4213A1;
@@ -353,7 +385,7 @@ SECTION
     margin: auto 30px; /* Centre horizontalement */
     padding: 70px 0px;/* Optionnel, limite la largeur du bloc */
 }
-.titre-tarifs h5{
+.titre-tarifs h3{
     text-align: center;
     margin: 0;
 }
@@ -435,7 +467,7 @@ SECTION
     
 }
 
-.informations-text h5{
+.informations-text h3{
     text-align: center;
     margin-top: 50px;
 }
@@ -447,7 +479,7 @@ SECTION
         margin: 0;
     }
 
-    .informations-text h5{
+    .informations-text h3{
         margin: 0
     }
     .informations{
@@ -472,7 +504,7 @@ SECTION
 }
 
 
-.citation h5 {
+.citation h3 {
     color: #4213A1;
     font-family: "Khand", sans-serif;
     font-style: italic;
@@ -491,7 +523,7 @@ SECTION
     .citation{
         margin: 50px 70px 100px 70px;
     }
-    .citation h5{
+    .citation h{
         font-size: 25px;
     }
     .citation p{
@@ -526,7 +558,7 @@ FOOTER
 .contact p{
     font-size: 18px;
 }
-.contact h5{
+.contact h3{
     font-size: 23px;
     text-align: left;
     margin-bottom: 30px;
@@ -610,7 +642,7 @@ FOOTER
     padding: 0 30px 30px 30px;
 }
 
-.lieux h5{
+.lieux h3{
     font-size: 23px;
     text-align: left;
     margin-bottom: 30px;

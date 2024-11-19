@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.6 // 30% visible pour déclencher
+        threshold: 0.4 // 30% visible pour déclencher
     });
 
     observer.observe(horairesSection);
